@@ -169,8 +169,8 @@ def make_all_papers_dict(papers_by_author):
 
     for paper,weight in zip(papers_by_author[1:],weight_paper[1:]):
         if paper.reference is not None:
-            print(paper.bibcode,paper.title)
-            print(paper.reference)
+            #print(paper.bibcode,paper.title)
+            #print(paper.reference)
             for ref in paper.reference:
                 if ref in all_papers_dict:
                     all_papers_dict[ref] += weight
