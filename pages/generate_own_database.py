@@ -250,7 +250,7 @@ def download_and_embed_papers(all_papers_dict):
             else:
                 list_abstracts.append("there is no abstract in this paper")
 
-        embeddings = compute_embeddings(list_abstracts)
+        embeddings = [0] * len(list_abstracts) # compute_embeddings(list_abstracts)
 
         # Update progress bar
         progress = (counter + 1) / total_chunks
