@@ -1,0 +1,3 @@
+conda init
+conda activate /opt/anaconda3/envs/test_NLP6
+streamlit run embedding_home.py
