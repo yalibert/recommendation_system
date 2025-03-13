@@ -250,7 +250,7 @@ def download_and_embed_papers(all_papers_dict):
             else:
                 list_abstracts.append("there is no abstract in this paper")
 
-        embeddings = compute_embeddings(list_abstracts)
+        embeddings = 0 # compute_embeddings(list_abstracts)
 
         # Update progress bar
         progress = (counter + 1) / total_chunks
@@ -340,7 +340,7 @@ if st.button("Search Papers"):
         weight_paper = compute_weights(papers_by_author)
         all_papers_dict = make_all_papers_dict(papers_by_author)
         st.write('Now downloading all abstract cited. This will take a while...')
-        #dict_papers,json_data = download_and_embed_papers(all_papers_dict)
+        dict_papers,json_data = download_and_embed_papers(all_papers_dict)
         ## Provide a download button
         #st.download_button(
         #    label="Download JSON file",
