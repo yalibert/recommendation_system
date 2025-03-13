@@ -269,7 +269,7 @@ def download_and_embed_papers(all_papers_dict):
                     'authors' : paper.author,
                     'references' : paper.reference,
                     'weight' : weight_chunk[i],
-                    'embedding' : embeddings[i]
+                    'embedding' : embeddings # [i]
                 }
             else:
                 print(f"No paper found for Bibcode: {paper.bibcode}")
