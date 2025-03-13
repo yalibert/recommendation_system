@@ -6,8 +6,11 @@ It is a recommendation system, which was built in the following system:
 2- each paper is given a score that depends on the number of authors in the author list (where the user is), and the position of the user in this author list (these are the papers that CITE the one refers at point 1)
 
 3- a training sample was built taking astroph.EP abstracts and organising in triplets
+
     - one anchor
+    
     - one positive sample which is a paper cited by the anchor, belonging to astroph.EP
+    
     - one negative sample which is a paper NOT cited by the anchor, belonging to astroph.EP, and at least one year older than the anchor
     
 4- sciBERT (allenAI) was trained such that the embedding of the anchor and positive samples are as close as possible, and embeddings of anchor and negative samples are as different as possible. In this way, the embeddings of two abstracts should be similar (cosine similarity) if one abstract cites the other, and dissimilar otherwise.
