@@ -95,8 +95,8 @@ def load_model():
     return tokenizer, model, device
 
 # Load and cache the model in session_state
-if "tokenizer" not in st.session_state:
-    st.session_state.tokenizer, st.session_state.model, st.session_state.device = load_model()
+#if "tokenizer" not in st.session_state:
+st.session_state.tokenizer, st.session_state.model, st.session_state.device = load_model()
    
 # --------------------------------------------
 # 📌 3. Function to Compute Embeddings
