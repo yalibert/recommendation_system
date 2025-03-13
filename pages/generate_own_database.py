@@ -335,6 +335,7 @@ if st.button("Search Papers"):
     elif not author_list:
         st.error("Please enter at least one author name.")
     else:
+        st.write('in dev')
         #papers_by_author = get_author_papers(author_list,ads_api_key)
         #weight_paper = compute_weights(papers_by_author)
         #all_papers_dict = make_all_papers_dict(papers_by_author)
