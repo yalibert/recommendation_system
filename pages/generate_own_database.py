@@ -341,11 +341,11 @@ if st.button("Search Papers"):
         all_papers_dict = make_all_papers_dict(papers_by_author)
         st.write('Now downloading all abstract cited. This will take a while...')
         dict_papers,json_data = download_and_embed_papers(all_papers_dict)
-        ## Provide a download button
-        #st.download_button(
-        #    label="Download JSON file",
-        #    data=json_data,
-        #    file_name="dict_papers_cited_by_author.json",
-        #    mime="application/json"
-        #)
+        # Provide a download button
+        st.download_button(
+            label="Download JSON file",
+            data=json_data,
+            file_name="dict_papers_cited_by_author.json",
+            mime="application/json"
+        )
 
