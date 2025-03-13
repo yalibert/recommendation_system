@@ -337,7 +337,7 @@ if st.button("Search Papers"):
     else:
         st.write('in dev')
         papers_by_author = get_author_papers(author_list,ads_api_key)
-        #weight_paper = compute_weights(papers_by_author)
+        weight_paper = compute_weights(papers_by_author)
         #all_papers_dict = make_all_papers_dict(papers_by_author)
         #st.write('Now downloading all abstract cited. This will take a while...')
         #dict_papers,json_data = download_and_embed_papers(all_papers_dict)
